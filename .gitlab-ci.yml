@@ -3,6 +3,6 @@ pages:
   script:
     - mkdir public
     - cp document img imgSkills logo index.html *.css public
-  artifact:
+  artifacts:
     paths:
       - public  
