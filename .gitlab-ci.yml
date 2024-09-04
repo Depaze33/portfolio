@@ -1,0 +1,8 @@
+pages:
+  image: alpine:latest
+  script:
+    - mkdir public
+    - cp document img imgSkills logo index.html *.css public
+  artifact:
+    paths:
+      - public  

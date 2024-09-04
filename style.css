@@ -1,10 +1,164 @@
-:root{
-    --colorTitle : #ff4735;
+/*timelin, card* justifié text*/
 
+:root {
+    --backgroudColor: #0D1D36;
+    --backgroud-color-two: #002D75;
+    --background-color-hover: #0f264b;
+    --color-a: #754F00;
+    --color-a-hover: #966702cd;
+    --colorTitle: #fcfaf3;
+    --police: "Lato", sans-serif;
+    --color-text: #fff;
+    --color-box-shadow: #002D75;
+}
 
+* {
+
+    box-sizing: border-box;
+    margin: 3px;
+    line-height: 150%;
+}
+
+body {
+    color: #fff;
+    background-color: var(--backgroudColor);
+    letter-spacing: 0.05em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-a);
+    font-family: var(--police);
     
+}
+
+a:hover {
+    color: var(--color-a-hover);
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 15px;
+
+}
+
+h2 {
+    font-size: 15px;
+
+}
+
+h1,
+h2 {
+    font-family: "SUSE", sans-serif;
+    font-weight: normal;
+
 }
 
 
 
+p {
+    font-family: var(--police);
 
+}
+
+/*TOP*/
+#top{
+    background-color: var(--backgroud-color-two);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/*PRESENTATION */
+
+
+#top:hover {
+    background-color: var(--background-color-hover);
+    transform: scale(1.02);
+   
+    box-shadow: 3px 3px 5px 5px var(--color-box-shadow);
+  
+}
+
+figure img {
+    width: 150px;
+}
+
+#title-presentation {
+   
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+}
+
+#contact {
+    
+    width: 100%;
+}
+
+
+/*---------------------*/
+
+/*PRESENTATION TEXT*/
+
+
+.experiences a {
+   
+}
+cv-container{
+ width: 50%;
+    background-color: var(--backgroud-color-two);
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    text-align: center;
+    color: var(--color-text) ;
+    border-radius: 50px;
+}
+.skills-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.skills img {
+    width: 40px;
+}
+
+.skills-item {
+    width: 30px;
+}
+
+figcaption {
+    font-size: 12px;
+    font-family: var(--police);
+}
+
+.portfolio-site img {
+    width: 30%;
+}
