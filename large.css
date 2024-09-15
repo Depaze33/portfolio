@@ -1,31 +1,29 @@
 nav {
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    top: 0; /* Toujours collé en haut */
+    top: 0;
     width: 100%;
     background-color: aliceblue;
-    z-index: 1000; /* S'assurer que la nav reste au-dessus des autres éléments */
+   
 }
 
 .menu {
-    display: flex;
+    top: 0;
     flex-direction: row;
-    justify-content: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .menu li {
-    list-style: none;
-    background-color: transparent;
-    border: none;
+    margin: 0;
+    background-color: transparent; 
+    border: none; 
     width: 130px;
-    text-align: center;
 }
 
-#top {
-    margin-top: 100px; /* Espace pour éviter que le contenu ne soit caché sous la nav */
+#top{
+margin-top: 100px;
 }
