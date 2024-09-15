@@ -32,7 +32,7 @@ body {
     letter-spacing: 0.05em;
     margin: 0;
     width: 100vw;
-    display :flex ;
+    display: flex;
     flex-direction: column;
     gap: 20px;
 }
@@ -61,7 +61,7 @@ h2 {
 p {
     font-family: var(--police);
     color: var(--color-p);
-    margin: 5px;
+    margin: 10px;
 }
 
 /*fin principal*/
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .menu {
-padding: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -176,6 +176,7 @@ figure img {
 /*---------------------*/
 
 /* GOOD POINT*/
+#good-points li {}
 
 #good-points {
     display: flex;
@@ -185,6 +186,7 @@ figure img {
     justify-content: center;
     margin: auto;
     border-radius: 50px;
+
 }
 
 #good-points h1 {
@@ -194,11 +196,12 @@ figure img {
 }
 
 #good-points li {
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
     color: #000;
     font-family: var(--police);
     color: #523e50;
+    list-style: none;
 }
 
 /*CV A*/
@@ -218,19 +221,22 @@ figure img {
     align-items: center;
     text-align: center;
 }
-#cv:hover{
+
+#cv:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -0.2em 0 .4em rgba(0, 0, 0, 0.2);
 }
 
 
 /*SKILLS*/
 .skills-grid {
+    display: grid;
     width: 100%;
     height: 100%;
-    margin: 0;
-    display: grid;
+    margin-left: 10px;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+
 
 }
 
@@ -256,6 +262,7 @@ figcaption {
     color: var(--color-p);
 
 }
+
 /*potfolio */
 
 
@@ -266,40 +273,38 @@ figcaption {
 }
 
 
-
-/*test*/
-
 .portfolio_product-browser {
     border: 2px solid #ddd;
     border-radius: 10px;
-    width: 300px; /* Ajuste cette largeur selon tes besoins */
+    width: 300px;
+    /* Ajuste cette largeur selon tes besoins */
     position: relative;
     margin: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     background-color: #f1eaea;
-  }
-  
-  .portfolio_product-browser-circle {
+}
+
+.portfolio_product-browser-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     display: inline-block;
     margin: 5px;
-  }
-  
-  .portfolio_product-browser-circle.red {
+}
+
+.portfolio_product-browser-circle.red {
     background-color: #ff5f56;
-  }
-  
-  .portfolio_product-browser-circle.yellow {
+}
+
+.portfolio_product-browser-circle.yellow {
     background-color: #ffbd2e;
-  }
-  
-  .portfolio_product-browser-circle.green {
+}
+
+.portfolio_product-browser-circle.green {
     background-color: #27c93f;
-  }
-  
-  .portfolio_product-image {
+}
+
+.portfolio_product-image {
     width: 100%;
     border-radius: 0 0 10px 10px;
-  }
+}
